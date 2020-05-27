@@ -652,13 +652,23 @@ uptime()
 
 
 참고
+
 [1] 노드공식 사이트 : https//nodejs.org/ko
+
 [2] 노드 공식 사이트 가이드 : http://nodejs.org/en/docs/guides/
+
 [3] 이벤트 루프에 대한 시각적 설명 : http://latentflip.com/loupe
+
 [4] 이벤트 루프에 대한 설명: https://nodejs.org/ko/docs/guides/event-loop-timers-and-nexttick/
+
 [5] VS Code 공식 사이트 : https://code.visualstudio.com
+
 [6] 자바스크립트 표준 스타일 : https://standardjs.com
+
 [7] 바벨 설치 : https://babeljs.io
+
 [8] cmake 설치 홈페이지: https://cmake.org/download/
+
 [9] CasperJS : http://casperjs.org/
+
 [10] Nodejs 버전 :  https://github.com/kslim1025/Release
