@@ -6,6 +6,7 @@ NodeJS 연구계획서
 2020년 1월 1일
 
 작성자 : 최현일
+
 회사 이름 : 프로보
 
 개요
@@ -13,11 +14,15 @@ NodeJS 연구계획서
 Nodejs는  V8을 기반으로 개발 되었기 때문에 그 기대감이 더욱 크고, 성능적인면을 보장할 수 있기 떄문에 모두에게 사랑 받는 서버 사이드 언어로 자리잡았다.
 
 초기설정
+
 $ node app
+
 $ npm install
+
 $ npm install 모듈 --msvs_version=2019
 
 장점
+
 커피스크립트, 자바스크립트 모두 이언어로 개발이 가능합니다. 
 자바스크립트 압축/최적화 도구인 uglify-js등을 모두 npm을 통해서 간단하게 설치 할 수 있습니다.
 yarn또한 페이스북이 개발했고, 구글도 참여한걸로 알려져도 논란이었던 일관성있고, 안정적인걸로 알려져 있습니다.
@@ -25,6 +30,7 @@ yarn또한 페이스북이 개발했고, 구글도 참여한걸로 알려져도 
 설명
 
 개념설명
+
 LTS버전: Long Term Support 30개월의 장기적인 지원 약속을 받은 버전
 Current버전 :어떠한 변화가 일어나고 있는 현재 버전
 REPL : Read Eval Print Loop 한줄씩 코드를 커멘드 라인처럼 실행해 볼 수 있는 환경
@@ -102,12 +108,10 @@ $ soruce ~/.bashrc
 --save-dev [모듈이름]`으로 설치하는 이유
 
 
-`$npm install --save-dev [모듈이름]`으로 설치하는것은 
-모듈을 설치할 때 package.json 내의 devDependencies 항목에 설치한 모듈과 버전을 넣는 것을 뜻합니다.
-dev로 시작되는 이름에서 볼 수 있듯이 개발용으로 쓸 경우 devDependencies에 기록합니다. 
+`$npm install --save-dev [모듈이름]`으로 설치하는것은 모듈을 설치할 때 package.json 내의 devDependencies 항목에 설치한 모듈과 버전을 넣는 것을 뜻합니다. dev로 시작되는 이름에서 볼 수 있듯이 개발용으로 쓸 경우 devDependencies에 기록합니다. 
 가령 이런 경우겠죠. 제품의 릴리즈나 구동시 꼭 필요한 모듈의 경우 --save 옵션으로 dependencies 항목에 기록하고
 제품의 개발시에 테스트를 위해서 필요한 모듈이긴 한데 실제 릴리즈시에는 필요없는 모듈의 경우 --save-dev로 devDependencies 항목에 넣는게 맞겠네요.
-자. 마지막으로 이렇게 기록된 모듈 항목들을 설치할 때는 어떻게 쓸까요? 그냥 `$npm install'이라 하면 될까요?
+  마지막으로 이렇게 기록된 모듈 항목들을 설치할 때는 어떻게 쓸까요? 그냥 `$npm install'이라 하면 될까요?
 `$npm install'이라고 쓰면 dependencies, devDependencies 모든 모듈을 설치합니다.
 dependencies만 설치하려면 `$npm install --only=prod[uction]`
 devDependencies만 설치하려면 `$npm install --only=dev[elopment]` 로 씁니다.
